@@ -35,12 +35,10 @@ ffmpeg -i input.mp4 -c copy -ss 00:00:05 -to 00:00:25 out.mp4
 | -c:a | aac<br>flac<br>... | 设置音频编码器 |
 | -b:v | 8000K | 视频码率为: 8000KB/S |
 | -b:a | 320K | 音频码率为: 320KB/S |
-| -b | 8000K | 视频码率为: 8000KB/S |
-| -ab | 320K | 音频码率为: 320KB/S |
 
 把 `input.mp4` 的视频流重新编码成 H264 10000KB/S 码率, 使用NVENC显卡加速, 音频流保持不变, 导出为 `out.mp4`
 ```
-ffmpeg -i input.mp4 -c:v h264_nvenc -b 10000K -c:a copy out.mp4
+ffmpeg -i input.mp4 -c:v h264_nvenc -b:v 10000K -c:a copy out.mp4
 ```
 部分 NVIDIA显卡 使用 `hevc_nvenc` 编码时的默认设置可能会报错 `B frames as references are not supported`
 
