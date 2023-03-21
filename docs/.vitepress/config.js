@@ -29,25 +29,7 @@ module.exports = {
         outlineTitle: '本页内容',
         nav: [
             {text: '首页', link: '/'},
-            {
-                text: 'Warframe',
-                items: [
-                    {text: 'Hosts修改', link: '/wfhosts',},
-                    {text: '启动和结束', link: '/wfqd'},
-                    {text: '设置备份', link: '/wfsetting'},
-                    {text: 'EE.log', link: '/wflog',},
-                ],
-            },
-            {
-                text: '配置',
-                items: [
-                    {text: 'Windows', link: '/windows'},
-                    {text: 'PowerShell', link: '/ps1'},
-                    {text: 'NVIDIA', link: '/nvidia'},
-                    {text: 'nginx', link: '/nginx'},
-                    {text: 'FFmpeg', link: '/ffmpeg'},
-                ],
-            },
+            {text: '开始阅读', link: '/wfhosts'},
             {
                 text: '链接',
                 items: [
@@ -80,6 +62,12 @@ module.exports = {
                     {text: '启动和结束', link: '/wfqd'},
                     {text: '设置备份', link: '/wfsetting'},
                     {text: 'EE.log', link: '/wflog',},
+                ],
+            },
+            {
+                text: 'Minecraft',
+                items: [
+                    {text: '服务端配置', link: '/mcserver',},
                 ],
             },
             {

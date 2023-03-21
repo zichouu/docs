@@ -5,3 +5,24 @@
 ``` ps1
 Set-ExecutionPolicy RemoteSigned
 ```
+
+## 关闭/开启 IPV6 脚本
+::: warning 注意
+以管理员身份运行, 如有中文需要修改编码保存
+`ANSI` `GB2312` `GBK` `GB18030`
+:::
+
+### *关闭*
+```ps1
+powershell Disable-NetAdapterBinding -Name "以太网" -ComponentID ms_tcpip6
+powershell Disable-NetAdapterBinding -Name "WLAN" -ComponentID ms_tcpip6
+```
+
+### *开启*
+```ps1
+powershell Enable-NetAdapterBinding -Name "以太网" -ComponentID ms_tcpip6
+powershell Enable-NetAdapterBinding -Name "WLAN" -ComponentID ms_tcpip6
+```
+
+### *视频*
+<iframe src="//player.bilibili.com/player.html?aid=478649985&bvid=BV1sT411Z7yG&cid=990580451&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="430px"> </iframe>

@@ -67,15 +67,15 @@ LTSC版本添加Store的方法: [Github](https://github.com/kkkgo/LTSC-Add-Micro
  ![](assets/wd/dyan.png)
 
 ## 13. 关闭 MsMpEng.exe
-### 名称
+### *名称*
 Antimalware Service Executable
 
-### 目录
+### *目录*
 Windows 10: `C:\Program Files\Windows Defender`
 
 Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
 
-### 方法
+### *方法*
 在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件.
 
 ## 脚本
