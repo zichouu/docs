@@ -15,10 +15,7 @@ hero:
       link: /wfhosts
     - theme: alt
       text: WFTime
-      link: https://zichou.pages.dev/wftime
-    - theme: alt
-      text: 哔哩哔哩
-      link: https://space.bilibili.com/11786852
+      link: https://zichou.eu.org/wftime
 
 # features:
 #   - icon: ⚡️

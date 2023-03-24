@@ -51,7 +51,7 @@ java -Xms13G -Xmx13G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMill
 
 ## [gamerule](https://minecraft.fandom.com/zh/wiki/游戏规则)
 ::: warning 注意
-一些服务端的 gamerule 命令只能更改主世界规则, 需要 OP 进入各个世界 (主世界, 下界, 末地) 后再进行设置
+一些服务端的 gamerule 命令只能更改主世界规则, 需要 OP 在游戏内进入各个世界 (主世界, 下界, 末地) 后再进行设置
 :::
 
 ### keepInventory

@@ -36,7 +36,7 @@ module.exports = {
                     {
                         text: '我的网站',
                         items: [
-                            {text: 'zichou.pages.dev', link: 'https://zichou.pages.dev/wftime'},
+                            {text: 'zichou.eu.org', link: 'https://zichou.eu.org/wftime'},
                         ]
                     },
                     {
