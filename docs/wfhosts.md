@@ -1,15 +1,34 @@
 ---
-layout: doc
+hosts: 'C:\Windows\System32\drivers\etc\hosts'
 ---
 
-# Warframe Hosts修改
+# Warframe Hosts 配置
+
+## 你先别急
+
+``` hosts
+#------------ wfhosts -------------
+#https://docs.zichou.eu.org/wfhosts
+
+#解决登录问题
+205.185.216.42 content.warframe.com
+
+#香港 (国内裸连 + 加速器)
+23.41.111.139 origin.warframe.com
+23.41.111.139 api.warframe.com
+
+#编辑日期: 2023-04-03
+#----------------------------------
+```
+- [Ping测试 (默认)](https://ping.chinaz.com/api.warframe.com)
+- [Ping测试 (配置Hosts后)](https://ping.chinaz.com/23.41.111.139)
 
 ## 1. 登录失败
 
 `content.warframe.com` 可能会被分配到 `205.185.216.10`
 此IP国内几乎都会登录失败
 
-需要在hosts文件 `C:\Windows\System32\drivers\etc\hosts` 添加一行
+需要在hosts文件 `{{ $frontmatter.hosts }}` 添加一行
 ``` hosts
 205.185.216.42 content.warframe.com
 ```
@@ -19,7 +38,7 @@ layout: doc
 
 加速器几乎都是香港节点, 优先选择香港结算服务器. 例如 `23.76.76.24`
 
-在hosts文件 `C:\Windows\System32\drivers\etc\hosts` 添加
+在hosts文件 `{{ $frontmatter.hosts }}` 添加
 ``` hosts
 23.76.76.24 origin.warframe.com
 23.76.76.24 api.warframe.com
@@ -32,7 +51,8 @@ layout: doc
 
 ## 3. 裸连结算
 
-使用 [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/475/) 搜索 `WarframeAPI` 找到延迟较低的IP
+- 使用 [UsbEAm Hosts Editor](https://www.dogfight360.com/blog/475/) 搜索 `WarframeAPI` 查找IP
+- 使用 [Censys 搜索 api.warframe.com](https://search.censys.io/search?resource=hosts&q=api.warframe.com) 查找IP
 
 `电信` `联通` 通常是日本延迟最低, `移动` 则是香港最低
 
@@ -55,7 +75,7 @@ layout: doc
 
 ![](assets/wfhosts/wd.png)
 
-例如 `23.67.163.105` 在hosts文件 `C:\Windows\System32\drivers\etc\hosts` 添加
+例如 `23.67.163.105` 在hosts文件 `{{ $frontmatter.hosts }}` 添加
 ``` hosts
 23.67.163.105 origin.warframe.com
 23.67.163.105 api.warframe.com

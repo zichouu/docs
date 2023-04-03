@@ -58,7 +58,7 @@ module.exports = {
             {
                 text: 'Warframe',
                 items: [
-                    {text: 'Hosts修改', link: '/wfhosts',},
+                    {text: 'Hosts', link: '/wfhosts',},
                     {text: '启动和结束', link: '/wfqd'},
                     {text: '设置备份', link: '/wfsetting'},
                     {text: 'EE.log', link: '/wflog',},
