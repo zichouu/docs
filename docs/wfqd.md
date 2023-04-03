@@ -20,7 +20,7 @@
 ## 2. 快速结束游戏
 创建个`.bat` 或者 `.cmd` 文件,内容如下
 
-```
+``` bash
 taskkill /f /t /im Launcher.exe
 taskkill /f /t /im warframe.exe
 taskkill /f /t /im Warframe.x64.exe

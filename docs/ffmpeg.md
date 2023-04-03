@@ -6,7 +6,7 @@
 | -i input.mkv | 输入文件: input.mkv |
 | -c copy | 直接复制视频和音频,无需重新编码,速度快 |
 | out.mp4 | 输出文件: out.mp4 |
-```
+``` bash
 ffmpeg -i input.mkv -c copy out.mp4
 ```
 
@@ -18,10 +18,10 @@ ffmpeg -i input.mkv -c copy out.mp4
 | -to 00:00:25 | 在原视频的第25秒结束 |
 
 裁剪 `input.mp4` 的第5-25秒的内容, 导出为 `out.mp4`
-```
+``` bash
 ffmpeg -i input.mp4 -c copy -ss 00:00:05 -t 20 out.mp4
 ```
-```
+``` bash
 ffmpeg -i input.mp4 -c copy -ss 00:00:05 -to 00:00:25 out.mp4
 ```
 
@@ -37,13 +37,13 @@ ffmpeg -i input.mp4 -c copy -ss 00:00:05 -to 00:00:25 out.mp4
 | -b:a | 320K | 音频码率为: 320KB/S |
 
 把 `input.mp4` 的视频流重新编码成 H264 10000KB/S 码率, 使用NVENC显卡加速, 音频流保持不变, 导出为 `out.mp4`
-```
+``` bash
 ffmpeg -i input.mp4 -c:v h264_nvenc -b:v 10000K -c:a copy out.mp4
 ```
 部分 NVIDIA显卡 使用 `hevc_nvenc` 编码时的默认设置可能会报错 `B frames as references are not supported`
 
 需要添加 `-b_ref_mode 0` 禁用B帧解决
-```
+``` bash
 ffmpeg -i input.mp4 -c:v hevc_nvenc -b_ref_mode 0 out.mp4
 ```
 
@@ -59,11 +59,11 @@ ffmpeg -i input.mp4 -c:v hevc_nvenc -b_ref_mode 0 out.mp4
 | AVIF | -crf | 0 > 63 |
 
 把 `input.jpg` 转换成50质量的 `out.webp`
-```
+``` bash
 ffmpeg -i input.jpg -q 50 out.webp
 ```
 
 把 `input.webp` 转换成30质量的 `out.avif`
-```
+``` bash
 ffmpeg -i input.webp -crf 30 out.avif
 ```
