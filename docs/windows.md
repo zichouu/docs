@@ -78,6 +78,12 @@ Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
 ### *方法*
 在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件.
 
+## 14. 关闭 基于虚拟化的安全性
+
+``` bash
+bcdedit /set hypervisorlaunchtype off
+```
+
 ## 脚本
 
 [蓝奏云](https://wwe.lanzoui.com/ij9100pdbbde)

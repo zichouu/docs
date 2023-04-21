@@ -8,16 +8,16 @@ hosts: 'C:\Windows\System32\drivers\etc\hosts'
 
 ``` hosts
 #------------ wfhosts -------------
-#https://docs.zichou.eu.org/wfhosts
+# https://docs.zichou.eu.org/wfhosts
 
-#解决登录问题
+# 解决登录问题
 205.185.216.42 content.warframe.com
 
-#香港 (国内裸连 + 加速器)
+# 香港 (国内裸连 + 加速器)
 23.41.111.139 origin.warframe.com
 23.41.111.139 api.warframe.com
 
-#编辑日期: 2023-04-03
+# 编辑日期: 2023-04-03
 #----------------------------------
 ```
 - [Ping测试 (默认)](https://ping.chinaz.com/api.warframe.com)

@@ -1,4 +1,4 @@
-# [FFmpeg](https://ffmpeg.org/download.html) 配置
+# [FFmpeg](https://ffmpeg.org/download.html)
 
 ## 格式转换
 | 命令 | 作用 |

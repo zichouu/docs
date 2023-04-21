@@ -77,7 +77,13 @@ module.exports = {
                     {text: 'PowerShell', link: '/ps1'},
                     {text: 'NVIDIA', link: '/nvidia'},
                     {text: 'nginx', link: '/nginx'},
+                ],
+            },
+            {
+                text: '备忘',
+                items: [
                     {text: 'FFmpeg', link: '/ffmpeg'},
+                    {text: 'adb', link: '/adb'},
                 ],
             },
         ],
