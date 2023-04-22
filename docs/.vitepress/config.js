@@ -77,6 +77,7 @@ module.exports = {
                     {text: 'PowerShell', link: '/ps1'},
                     {text: 'NVIDIA', link: '/nvidia'},
                     {text: 'nginx', link: '/nginx'},
+                    {text: 'Proxifier', link: '/proxifier'},
                 ],
             },
             {
