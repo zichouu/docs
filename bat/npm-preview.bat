@@ -1,1 +1,1 @@
-npm run docs:preview
+npm run preview
