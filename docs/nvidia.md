@@ -1,4 +1,6 @@
-# [NVIDIA](https://www.nvidia.cn/geforce/drivers/) 配置
+# NVIDIA 配置
+
+[官网](https://www.nvidia.cn/geforce/drivers/)
 
 ## 录制
 如果有2块硬盘的话: 选择仓库盘保存临时文件, 避免影响系统盘寿命.

@@ -1,4 +1,6 @@
-# [nginx](https://nginx.org/en/download.html) 配置
+# nginx 配置
+
+[官网](https://nginx.org/en/download.html)
 
 ## http2
 ```conf{2}

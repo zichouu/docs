@@ -1,6 +1,8 @@
 # Minecraft 服务端配置
 
-## [JVM](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/) 参数
+## JVM 参数
+
+[链接](https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/)
 
 ::: code-group
 ``` bash [使用内存 &lt 12G]
@@ -11,7 +13,9 @@ java -Xms13G -Xmx13G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMill
 ```
 :::
 
-## [server.properties](https://minecraft.fandom.com/zh/wiki/Server.properties)
+## server.properties
+
+[Wiki](https://minecraft.fandom.com/zh/wiki/Server.properties)
 
 ### *pvp*
 是否允许PvP
@@ -48,7 +52,10 @@ java -Xms13G -Xmx13G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMill
 
 默认值 `100` 可能会有个问题: [恶魂](https://minecraft.fandom.com/zh/wiki/恶魂) 正在向你发射火球, 但你看不到恶魂, 只能听到声音和看到火球. 可以适当提高此值来解决此问题
 
-## [gamerule](https://minecraft.fandom.com/zh/wiki/游戏规则)
+## gamerule
+
+[Wiki](https://minecraft.fandom.com/zh/wiki/游戏规则)
+
 ::: warning 注意
 一些服务端的 gamerule 命令只能更改主世界规则, 需要 OP 在游戏内进入各个世界 (主世界, 下界, 末地) 后再进行设置
 :::

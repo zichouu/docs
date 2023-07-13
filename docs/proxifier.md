@@ -1,4 +1,6 @@
-# [Proxifier](https://www.proxifier.com/download/) 配置
+# Proxifier 配置
+
+[官网](https://www.proxifier.com/download/)
 
 ## Key
 `LYZGL-F2KX3-JW5W4-A33MC-25QHH`

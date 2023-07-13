@@ -1,4 +1,7 @@
-# [adb](https://developer.android.com/studio/releases/platform-tools)
+# adb
+
+[官网](https://developer.android.com/studio/releases/platform-tools)
+
 [直链 (Windows)](https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn)
 
 ## reboot

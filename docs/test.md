@@ -4,14 +4,23 @@
 ### 50KB JPG
 ![JPG图片](assets/test/test.jpg)
 
-### 50KB [WEBP](https://caniuse.com/webp)
+### 50KB WEBP
+
+[caniuse](https://caniuse.com/webp)
+
 ![WEBP图片](assets/test/test.webp)
 
-### 50KB [AVIF](https://caniuse.com/avif)
+### 50KB AVIF
+
+[caniuse](https://caniuse.com/avif)
+
 ![AVIF图片](assets/test/test.avif)
 
 ## 视频
-### [HEVC](https://caniuse.com/hevc)
+### HEVC
+
+[caniuse](https://caniuse.com/hevc)
+
 视频格式: HEVC 1920*1080 60FPS 4093KB/S
 
 音频格式: AAC 194KB/S
