@@ -25,5 +25,6 @@ powershell Enable-NetAdapterBinding -Name "WLAN" -ComponentID ms_tcpip6
 ```
 :::
 
-### *视频*
-<iframe src="//player.bilibili.com/player.html?aid=478649985&bvid=BV1sT411Z7yG&cid=990580451&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="430px"> </iframe>
+::: details 视频
+<iframe src="//player.bilibili.com/player.html?aid=478649985&bvid=BV1sT411Z7yG&cid=990580451&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="368px"> </iframe>
+:::

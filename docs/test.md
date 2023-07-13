@@ -34,7 +34,7 @@
 [r6e.mp4](https://cowtransfer.com/s/67d16633464640)
 
 ### BiliBili 嵌入
-<iframe src="//player.bilibili.com/player.html?aid=225789230&bvid=BV1xb411f7vH&cid=1049205044&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="430px"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=225789230&bvid=BV1xb411f7vH&cid=1057888772&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="387px"> </iframe>
 
 ### YouTube 嵌入
 <iframe width="100%" height="413" src="https://www.youtube.com/embed/OlsJcZyirx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
