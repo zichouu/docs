@@ -1,4 +1,4 @@
-import bili from './svg/bili'
+// import bili from './svg/bili'
 module.exports = {
     title: 'zichou docs',
     lang: 'zh',
@@ -158,11 +158,15 @@ module.exports = {
         //     }
         // },
         socialLinks: [
+            // {
+            //     icon: {
+            //         svg: bili
+            //     },
+            //     link: 'https://space.bilibili.com/11786852' 
+            // },
             {
-                icon: {
-                    svg: bili
-                },
-                link: 'https://space.bilibili.com/11786852' 
+                icon: 'github',
+                link: 'https://github.com/zichouu/docs'
             }
         ],
     },
