@@ -85,6 +85,7 @@ module.exports = {
                 text: '备忘',
                 items: [
                     {text: 'FFmpeg', link: '/ffmpeg'},
+                    {text: 'Git', link: '/git'},
                     {text: 'adb', link: '/adb'},
                 ],
             },
