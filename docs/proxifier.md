@@ -8,9 +8,10 @@
 ## 代理规则
 | Name | Applications | Target Hosts | Target Ports |
 | --- | --- | --- | --- |
-| GitHub | Any | *.github.com; *.githubusercontent.com | Any |
+| GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev | Any |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
 | Twitter | Any | *.twitter.com; *.twimg.com | Any |
+| Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.chrome.com; *.android.com | Any |
 | Steam | Any | *.steamcommunity.com | Any |
 | other web | Any | *.geph.io; *.workers.dev; *.mod.io; *.apkmirror.com; | Any |
