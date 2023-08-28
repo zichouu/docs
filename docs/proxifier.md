@@ -11,6 +11,7 @@
 | GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev | Any |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
 | Twitter | Any | *.twitter.com; *.twimg.com | Any |
+| Twitch | Any | *.twitch.tv; *.twitchcdn.net |
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.chrome.com; *.android.com | Any |
 | Steam | Any | *.steamcommunity.com | Any |
