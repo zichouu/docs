@@ -84,6 +84,47 @@ Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
 bcdedit /set hypervisorlaunchtype off
 ```
 
+## 15. 睡眠相关
+::: tip 
+ 1. 睡眠
+    
+    数据保存在内存里, 内存条保持供电
+    - 优点: 开机快
+    - 缺点: 断电后数据丢失
+
+ 2. 休眠
+ 
+    数据保存在硬盘里, 和关机一样的断电
+    - 优点: 不需要保持供电
+    - 缺点: 影响硬盘寿命
+    
+ 3. 混合睡眠
+ 
+    睡眠+休眠, 主睡眠次休眠, 断电后从硬盘读取数据
+
+ 4. 睡眠和关机的功耗
+
+    我的实测数据:
+     - 睡眠: 7W (不建议断电)
+     - 关机: 5W (可断电)
+:::
+ - `电源选项` 关闭混合睡眠
+
+    ![](assets/wd/hhsm.png)
+
+ - `设备管理器` 关闭键盘,鼠标和网卡的唤醒
+
+    ![](assets/wd/hxjp.png)
+
+    ![](assets/wd/hxsb.png)
+
+    ![](assets/wd/hxwk.png)
+
+## 16. 虚拟内存
+设置在一个不会满载的分区里, 确保有 50G+ 的空间, 避免分区存满后虚拟内存不足导致应用闪退.
+
+![](assets/wd/xnnc.png)
+
 ## 脚本
 
 [蓝奏云](https://wwe.lanzoui.com/ij9100pdbbde)
