@@ -127,5 +127,5 @@ bcdedit /set hypervisorlaunchtype off
 
 ## 脚本
 
-[蓝奏云](https://wwe.lanzoui.com/ij9100pdbbde)
-(关闭 Defender,自动更新,遥测,OneDrive,SysMain,WSearch)
+[蓝奏云](https://wwe.lanzoui.com/iJtQe1c4prqb)
+(关闭 Defender,自动更新,遥测,SysMain,WSearch)

@@ -14,5 +14,5 @@
 | Twitch | Any | *.twitch.tv; *.twitchcdn.net |
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.chrome.com; *.android.com | Any |
-| Steam | Any | *.steamcommunity.com | Any |
-| other web | Any | *.geph.io; *.workers.dev; *.mod.io; *.apkmirror.com; | Any |
+| Steam | Any | *.steamcommunity.com; *.steampowered.com | Any |
+| other web | Any | *.geph.io; *.workers.dev; *.mod.io; *.apkmirror.com; *.3dmark.com; *.warframe.market | Any |
