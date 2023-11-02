@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /wfhosts
+      link: /wfqd
     - theme: alt
       text: WFTime
       link: https://zichou.eu.org/wftime

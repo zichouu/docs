@@ -4,6 +4,10 @@ hosts: 'C:\Windows\System32\drivers\etc\hosts'
 
 # Warframe Hosts 配置
 
+::: danger 过时
+**文章已过时**. 现在大多数情况下, 不需要修改hosts文件.
+:::
+
 ## 1. 登录失败
 
 `content.warframe.com` 可能会被分配到 `205.185.216.10`
