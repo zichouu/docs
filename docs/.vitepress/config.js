@@ -29,7 +29,7 @@ module.exports = {
         outlineTitle: '本页内容',
         nav: [
             {text: '首页', link: '/'},
-            {text: '开始阅读', link: '/wfhosts'},
+            {text: '开始阅读', link: '/wfqd'},
             {
                 text: '链接',
                 items: [
