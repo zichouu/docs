@@ -8,7 +8,7 @@
 ## 代理规则
 | Name | Applications | Target Hosts | Target Ports |
 | --- | --- | --- | --- |
-| Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.chrome.com; *.android.com | Any |
+| Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.googleapis.com; *.chrome.com; *.android.com | Any |
 | Twitter | Any | *.twitter.com; *.twimg.com | Any |
 | Twitch | Any | *.twitch.tv; *.twitchcdn.net |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
@@ -16,4 +16,4 @@
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Steam | Any | *.steamcommunity.com; *.steampowered.com | Any |
 | Cloudflare | Any | *.cloudflare.com; *.workers.dev | Any |
-| other web | Any | *.geph.io; *.mod.io; *.apkmirror.com; *.3dmark.com; *.warframe.market; *.fandom.com | Any |
+| other web | Any | *.epicgames.com; *.geph.io; *.mod.io; *.apkmirror.com; *.3dmark.com; *.warframe.market; *.fandom.com | Any |
