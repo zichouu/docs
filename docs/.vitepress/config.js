@@ -173,7 +173,16 @@ module.exports = {
         ],
     },
     head: [
-        ['link',{rel: 'icon', href: 'logo.png'}]
+        ['link',{rel: 'icon', href: 'logo.png'}],
+        [
+            'script',
+            { id: 'register-sw' },
+            `;(() => {
+              if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+              }
+            })()`
+        ]
     ],
     plugins: [
     ],
