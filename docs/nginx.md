@@ -47,7 +47,7 @@ http {
 ```conf{3}
 server {
     location / {
-        try_files $uri $uri/ /index.html;
+        try_files $uri $uri/ $uri.html /index.html;
     }
 }
 ```
@@ -102,7 +102,7 @@ http {
     # gzip压缩
     gzip_static      on;
     gzip             on;
-    gzip_buffers     32 4K;
+    # gzip_buffers     32 4K;
     gzip_comp_level  1;
     gzip_min_length  0;
     gzip_types       application/javascript text/css text/xml image/svg+xml;
@@ -145,7 +145,7 @@ http {
            index  index.html index.htm;
 
            # Vue Router History
-           try_files $uri $uri/ /index.html;
+           try_files $uri $uri/ $uri.html /index.html;
        }
     }
 }
