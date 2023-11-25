@@ -17,7 +17,7 @@ module.exports = {
     //     }
     // },
     themeConfig: {
-        logo: 'logo.png',
+        logo: '/logo.png',
         outline: 'deep',
         docFooter: {
             prev: '上一篇',
@@ -173,7 +173,6 @@ module.exports = {
         ],
     },
     head: [
-        ['link',{rel: 'icon', href: 'logo.png'}],
         [
             'script',
             { id: 'register-sw' },
