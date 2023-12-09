@@ -23,7 +23,7 @@ module.exports = {
 			}
 		},
 		{
-			urlPattern: /\.(css|js|ts|gz|br)$/i,
+			urlPattern: /.*\.(css|js|ts|gz|br)$/i,
 			handler: 'StaleWhileRevalidate',
 			options: {
 				cacheName: 'asset',
@@ -37,7 +37,7 @@ module.exports = {
 			}
 		},
 		{
-			urlPattern: /\.(jpe?g|gif|png|svg|webp|avif|ico)$/i,
+			urlPattern: /.*\.(jpe?g|gif|png|svg|webp|avif|ico)$/i,
 			handler: 'CacheFirst',
 			options: {
 				cacheName: 'image',
@@ -51,7 +51,7 @@ module.exports = {
 			}
 		},
 		{
-			urlPattern: /\.(mp4|webm|avi|flv|mov)$/i,
+			urlPattern: /.*\.(mp4|webm|avi|flv|mov)$/i,
 			handler: 'CacheFirst',
 			options: {
 				cacheName: 'video',
@@ -65,7 +65,7 @@ module.exports = {
 			}
 		},
 		{
-			urlPattern: /\.(ttf|otf|woff2?)$/i,
+			urlPattern: /.*\.(ttf|otf|woff2?)$/i,
 			handler: 'CacheFirst',
 			options: {
 				cacheName: 'font',
