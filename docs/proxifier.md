@@ -9,7 +9,7 @@
 | Name | Applications | Target Hosts | Target Ports |
 | --- | --- | --- | --- |
 | Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.googleapis.com; *.chrome.com; *.android.com; *.withgoogle.com | Any |
-| Twitter | Any | *.twitter.com; *.twimg.com | Any |
+| Twitter | Any | *.twitter.com; *.twimg.com; *.t.co | Any |
 | Twitch | Any | *.twitch.tv; *.twitchcdn.net |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
 | GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev | Any |

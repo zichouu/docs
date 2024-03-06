@@ -32,7 +32,6 @@
     - [MiPush](https://github.com/NihilityT/MiPush/releases)
 - 哔哩哔哩
     - [BiliRoaming](https://github.com/yujincheng08/BiliRoaming/releases) 漫游
-    - [com.weixiao.bz](https://cowtransfer.com/s/8276980ebe8241) 会员画质
 - [Thanox](https://github.com/Tornaco/Thanox/releases) 后台管理
 
 ### 高级应用

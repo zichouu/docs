@@ -42,7 +42,7 @@ module.exports = {
                     {
                         text: 'Dev',
                         items: [
-                            {text: 'VitePress', link: 'https://vitepress.dev/reference/site-config'},
+                            {text: 'VitePress', link: 'https://vitepress.dev/zh/reference/site-config'},
                         ],
                     },
                     {
