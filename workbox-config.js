@@ -51,7 +51,7 @@ module.exports = {
 			}
 		},
 		{
-			urlPattern: /.*\.(mp4|webm|avi|flv|mov)$/i,
+			urlPattern: /.*\.(mp4|mp3|webm|avi|flv|mov)$/i,
 			handler: 'CacheFirst',
 			options: {
 				cacheName: 'video',
