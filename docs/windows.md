@@ -1,90 +1,81 @@
 # Windows 系统设置
 
 ## 前言
-我新装系统后的必要设置, 备忘
+我新装系统后的一些设置, 备忘
 
-## 0. 装前细节
- - 提前准备好驱动的新版安装包(特别是显卡和网卡), 系统初始化时全程断网即可避免Windows自动安装旧版驱动(断网也能加快初始化速度, 避免因网络造成的影响), 驱动安装完成后再恢复网络.
+## 0 装前细节
+1. 提前准备好驱动的新版安装包, 特别是显卡和网卡
+   - 显卡: 文件体积大
+   - 网卡: 避免无法上网的个别情况
+2. 系统初始化时不要连网, 直到显卡驱动安装完毕
+   - 避免 Windows 自动下载体积过大且版本老旧的显卡驱动
+   - 加快初始化速度, 避免因网络造成的影响
 
-## 1. 关闭鼠标精准
+## 1 设置
+
+### 关闭鼠标精准
 ![](assets/wd/sbjz.png)
 
-## 2. 关闭 Defender
-关闭 `Windows Defender`
-
-![](assets/wd/defender.png)
-
-## 3. 关闭 UAC 提示
+### 关闭 UAC 提示
 ![](assets/wd/uac.png)
 
-## 4. 关闭防火墙
+### 关闭防火墙
 ![](assets/wd/fhq.png)
 
-## 5. 关闭驱动器优化计划
+### 关闭驱动器优化计划
 ![](assets/wd/qdqyh.png)
 
-## 6. 关闭粘滞快捷键
+### 关闭粘滞快捷键
 ![](assets/wd/s5.png)
 
-## 7. 关闭传递优化
+### 关闭传递优化
 ![](assets/wd/cdyh.png)
 
-## 8. 关闭窗口最小化鼠标手势
+### 关闭窗口最小化鼠标手势
 :::tip 提示
-新版系统默认关闭, 旧版在组策略关闭.
+新版系统默认关闭, 旧版在组策略关闭
 :::
-
 ![](assets/wd/shake.png)
 
-## 9. 关闭 Store 自动更新
+### 关闭 Store 自动更新
 :::tip 提示
 LTSC版本添加Store的方法: [Github](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
 :::
-
 ![](assets/wd/store.png)
 
-## 10. 资源管理器设置 (Explorer)
- - 开启 `文件扩展名` `隐藏的项目`
+### 资源管理器 (Explorer)
+- 开启 `文件扩展名` `隐藏的项目`
+![](assets/wd/kz.png)
+- 文件夹选项
+![](assets/wd/wjj.png)
 
- ![](assets/wd/kz.png)
-
- - 文件夹选项
-
- ![](assets/wd/wjj.png)
-
-## 11. 性能选项
+### 性能选项
 关闭一些过度动画, 效率至上
-
 ![](assets/wd/xn.png)
 
-## 12. 电源选项
- - 设置 `卓越性能` / `高性能`
+## 2 电源选项
+- 设置 `卓越性能` / `高性能`
 
- ![](assets/wd/zhuoyue.png)
+![](assets/wd/zhuoyue.png)
 
- - 关闭 `快速启动`, 设置 `不采取任何操作` 避免误关机
- 
- ![](assets/wd/dyan.png)
+- 关闭 `快速启动`, 设置 `不采取任何操作` 避免误关机
 
-## 13. 关闭 MsMpEng.exe
-### *名称*
-Antimalware Service Executable
+![](assets/wd/dyan.png)
 
-### *目录*
-Windows 10: `C:\Program Files\Windows Defender`
-
-Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
-
-### *方法*
-在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件.
-
-## 14. 关闭 基于虚拟化的安全性
-
+### 2.1 全大核调度
 ``` bash
-bcdedit /set hypervisorlaunchtype off
+powercfg -attributes SUB_PROCESSOR bae08b81-2d5e-4688-ad6a-13243356654b -ATTRIB_HIDE
 ```
+``` bash
+powercfg -attributes SUB_PROCESSOR 93b8b6dc-0698-4d1c-9ee4-0644e900c85d -ATTRIB_HIDE
+```
+::: tip 默认值
+- 异类线程调度策略 `自动`
+- 异类短运行线程调度策略 `首选高性能处理器`
+:::
+![](assets/wd/yilei.png)
 
-## 15. 睡眠相关
+## 3 睡眠相关
 ::: tip 
  1. 睡眠
     
@@ -120,10 +111,20 @@ bcdedit /set hypervisorlaunchtype off
 
     ![](assets/wd/hxwk.png)
 
-## 16. 虚拟内存
-根据自己的使用情况, 硬盘剩余空间来设置一个尽量大的虚拟内存. 并保持所选分区空间不满载.
+## 4 关闭 基于虚拟化的安全性
+``` bash
+bcdedit /set hypervisorlaunchtype off
+```
 
-不确定的话, 就选择系统托管, 能满足大部分使用场景.
+## 5 危险性操作
+
+### 关闭 Defender
+![](assets/wd/defender.png)
+
+### 虚拟内存
+根据自己的使用情况, 硬盘剩余空间来设置一个尽量大的虚拟内存. 并保持所选分区空间不满载
+
+不确定的话, 就选择系统托管, 能满足大部分使用场景
 ::: tip TIP
 系统托管会设置约1.5倍的物理内存大小. 例如16G物理内存会设置16*1.5=24G虚拟内存, 假如这个24G虚拟内存还是不够用(占用70%+), 最好还是自定义大小分配个足够大的(占用<50%)
 
@@ -132,7 +133,15 @@ bcdedit /set hypervisorlaunchtype off
 
 ![](assets/wd/xnnc.png)
 
-## 脚本
+### 关闭 MsMpEng.exe
+- 名称
+  - [Antimalware Service Executable](https://cn.bing.com/search?q=Antimalware+Service+Executable)
+- 目录
+  - Windows 10: `C:\Program Files\Windows Defender`
+  - Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
 
+在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件
+
+### 脚本
 [蓝奏云](https://wwe.lanzoui.com/iJtQe1c4prqb)
 (关闭 Defender,自动更新,遥测,SysMain,WSearch)
