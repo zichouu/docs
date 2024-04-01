@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
-        "vitepress": "^1.0.0-rc.45"
+        "vitepress": "^1.0.2"
     },
     "scripts": {
         "dev": "vitepress dev docs --host",
@@ -17,6 +17,6 @@
     "dependencies": {
         "taze": "^0.13.3",
         "workbox-cli": "^7.0.0",
-        "wrangler": "^3.31.0"
+        "wrangler": "^3.41.0"
     }
 }
