@@ -34,7 +34,7 @@ import bili from '.vitepress/svg/bili'
 
 const members = [
   {
-    avatar: 'https://cravatar.cn/avatar/5b31ea74de0da0c0f1f8849d31420091',
+    avatar: 'https://cravatar.cn/avatar/5b31ea74de0da0c0f1f8849d31420091?s=512',
     name: 'zichou',
     title: '',
     links: [
