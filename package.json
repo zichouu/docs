@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
-        "vitepress": "^1.0.2"
+        "vitepress": "^1.1.0"
     },
     "scripts": {
         "dev": "vitepress dev docs --host",
@@ -15,8 +15,8 @@
         "update": "yarn upgrade"
     },
     "dependencies": {
-        "taze": "^0.13.3",
+        "taze": "^0.13.6",
         "workbox-cli": "^7.0.0",
-        "wrangler": "^3.41.0"
+        "wrangler": "^3.51.0"
     }
 }
