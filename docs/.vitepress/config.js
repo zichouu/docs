@@ -71,6 +71,12 @@ module.exports = {
                 ],
             },
             {
+                text: 'CS2',
+                items: [
+                    {text: 'autoexec.cfg', link: '/cs',},
+                ],
+            },
+            {
                 text: '配置',
                 items: [
                     {text: 'Windows', link: '/windows'},
