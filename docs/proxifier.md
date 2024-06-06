@@ -16,4 +16,4 @@
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Steam | Any | *.steamcommunity.com; *.steampowered.com | Any |
 | Cloudflare | Any | *.cloudflare.com; *.workers.dev | Any |
-| other web | Any | *.epicgames.com; *.geph.io; *.mod.io; *.apkmirror.com; *.3dmark.com; *.warframe.market; *.fandom.com; *.freenom.com; *.vercel.app | Any |
+| other web | Any | *.epicgames.com; *.geph.io; *.mod.io; *.apkmirror.com; *.3dmark.com; *.warframe.market; *.fandom.com; *.freenom.com; *.vercel.app; *.web.dev; *.zerotier.com | Any |
