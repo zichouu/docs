@@ -1,27 +1,19 @@
-# 我的 MI8 刷机流程 LineageOS
+# Mi => LineageOS
 
 ## 准备
+- [解锁小米手机](https://www.miui.com/unlock)
 - [ADB](https://developer.android.com/studio/releases/platform-tools?hl=zh-cn): [Windows版下载](https://dl.google.com/android/repository/platform-tools-latest-windows.zip?hl=zh-cn)
 - [MIFlash](https://xiaomirom.com/download-xiaomi-flash-tool-miflash/): [MiFlash2020-3-14-0.rar](https://cdn.alsgp0.fds.api.mi-img.com/micomm/MiFlash2020-3-14-0.rar)
-- [xiaomirom.com](https://xiaomirom.com/series/dipper/): [dipper_images_V12.5.2.0.QEACNXM_20211028.0000.00_10.0_cn](https://3phne1irpolds88ngjm54cng3neoapmlpjabf8rm1ul6nnugqlsvu7v6.qc.dolfincdnx.net:10443/xdispatch7416aadc7700532a/bigota.d.miui.com/V12.5.2.0.QEACNXM/dipper_images_V12.5.2.0.QEACNXM_20211028.0000.00_10.0_cn_f4ae6b9441.tgz?bsreqid=5d78e17f586f4b05b4beef0807fbefd4&bsxdisp=se)
-- [LineageOS](https://download.lineageos.org/devices/dipper/builds)
-- ~~[OpenGApps](https://opengapps.org/): [open_gapps-arm64-10.0-pico-20200705.zip](https://sourceforge.net/projects/opengapps/files/arm64/20200705/open_gapps-arm64-10.0-pico-20200705.zip/download)~~
+- [xiaomirom.com](https://xiaomirom.com/)
+- [LineageOS](https://wiki.lineageos.org/devices/)
 - [NikGapps](https://sourceforge.net/projects/nikgapps/files/)
-- ~~[TWRP](https://dl.twrp.me/dipper/)~~
-- [Magisk](https://github.com/topjohnwu/Magisk/releases)
+- [Magisk](https://github.com/topjohnwu/Magisk/releases) / [Kitsune](https://github.com/HuskyDG/magisk-files)
 <!-- - [MT管理器](https://mt2.cn/download/) -->
-
-## 流程
-1. 使用 MIFlash 刷入官方线刷包
-2. [安装 LineageOS](https://wiki.lineageos.org/devices/dipper/install)
-    1. 刷入 LineageOS Recovery `fastboot flash recovery recovery.img`
-    2. 进入 Recovery 格式化分区 `Format data / factory reset`
-    3. 刷入 LineageOS `adb sideload lineage.zip`
-    4. 刷入 `GApps` `Magisk` (可选)
 
 ## 应用
 ### Root 前置
 - [Magisk](https://github.com/topjohnwu/Magisk/releases)
+- [Kitsune](https://github.com/HuskyDG/magisk-files)
 - [LSPosed](https://github.com/LSPosed/LSPosed/releases)
 
 ### Magisk / Xposed 模块
@@ -44,17 +36,6 @@
 
 ### 系统
 - [BSG](https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/) Google 相机
-
-## 腾出 System 分区空间安装 GApps (官方系统)
-::: warning 注意
-删除需要 Root System 权限
-:::
-MIUI V12.5.2.0
-- `/system/app/SogouInput` 搜狗输入法 31M
-- `/system/priv-app/Browser` 小米浏览器 84M
-- `/system/priv-app/MiuiVideo` 小米视频 84M
-- `/system/priv-app/Music` 小米音乐 31M
-
  
 ## USB3.0 接口问题修复
 ::: code-group
