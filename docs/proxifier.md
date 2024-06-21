@@ -11,6 +11,7 @@
 | Google | Any | *.google.com; *.youtube.com; *.youtube-nocookie.com; *.googlevideo.com; *.ytimg.com; *.ggpht.com; *.googleusercontent.com; *.googleapis.com; *.chrome.com; *.android.com; *.withgoogle.com | Any |
 | Twitter | Any | *.twitter.com; *.twimg.com; *.t.co | Any |
 | Twitch | Any | *.twitch.tv; *.twitchcdn.net |
+| Spotify | Any | *.spotify.com |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
 | GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev | Any |
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
