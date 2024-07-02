@@ -54,14 +54,19 @@ Windows Registry Editor Version 5.00
 ```
 :::
 
-## NTP
+## Captive Portal
 ::: code-group
-``` bash [删除]
+``` bash [删除https]
 adb shell settings delete global captive_portal_https_url
+```
+``` bash [删除http]
 adb shell settings delete global captive_portal_http_url
 ```
-``` bash [添加]
-adb shell settings put global captive_portal_https_url https://connect.rom.miui.com/generate_204
-adb shell settings put global captive_portal_http_url http://connect.rom.miui.com/generate_204
+``` bash [添加https]
+adb shell settings put global captive_portal_https_url https://g.cn/generate_204
 ```
+``` bash [添加http]
+adb shell settings put global captive_portal_http_url http://g.cn/generate_204
+```
+
 :::
