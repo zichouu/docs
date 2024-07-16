@@ -1,14 +1,11 @@
 # Windows 系统设置
 
-## 前言
-我新装系统后的一些设置, 备忘
-
 ## 0 装前细节
 1. 提前准备好驱动的新版安装包, 特别是显卡和网卡
    - 显卡: 文件体积大
    - 网卡: 避免无法上网的个别情况
 2. 系统初始化时不要连网, 直到显卡驱动安装完毕
-   - 避免 Windows 自动下载体积过大且版本老旧的显卡驱动
+   - 避免 Windows 自动下载体积大且版本老旧的显卡驱动
    - 加快初始化速度, 避免因网络造成的影响
 
 ## 1 设置
@@ -53,16 +50,25 @@ LTSC版本添加Store的方法: [Github](https://github.com/kkkgo/LTSC-Add-Micro
 关闭一些过度动画, 效率至上
 ![](assets/wd/xn.png)
 
+### 虚拟内存
+根据自己的使用量, 设置一个尽量大的虚拟内存 (占用<80%). 个人建议 50G+
+
+![](assets/wd/xnnc.png)
+
 ## 2 电源选项
+
+### 高性能
 - 设置 `卓越性能` / `高性能`
 
 ![](assets/wd/zhuoyue.png)
 
+### 关闭 快速启动
 - 关闭 `快速启动`, 设置 `不采取任何操作` 避免误关机
 
 ![](assets/wd/dyan.png)
 
-### 2.1 全大核调度
+### 全大核调度 
+全大核CPU的可能会更佳?
 ``` bash
 powercfg -attributes SUB_PROCESSOR bae08b81-2d5e-4688-ad6a-13243356654b -ATTRIB_HIDE
 ```
@@ -121,27 +127,15 @@ bcdedit /set hypervisorlaunchtype off
 ### 关闭 Defender
 ![](assets/wd/defender.png)
 
-### 虚拟内存
-根据自己的使用情况, 硬盘剩余空间来设置一个尽量大的虚拟内存. 并保持所选分区空间不满载
-
-不确定的话, 就选择系统托管, 能满足大部分使用场景
-::: tip TIP
-系统托管会设置约1.5倍的物理内存大小. 例如16G物理内存会设置16*1.5=24G虚拟内存, 假如这个24G虚拟内存还是不够用(占用70%+), 最好还是自定义大小分配个足够大的(占用<50%)
-
-**! 括号内的占用指的是虚拟内存, 不是物理内存 !**
-:::
-
-![](assets/wd/xnnc.png)
-
-### 关闭 MsMpEng.exe
+<!-- ### 关闭 MsMpEng.exe
 - 名称
   - [Antimalware Service Executable](https://cn.bing.com/search?q=Antimalware+Service+Executable)
 - 目录
   - Windows 10: `C:\Program Files\Windows Defender`
   - Windows 11: `C:\ProgramData(隐藏)\Microsoft\Windows Defender\Platform`
 
-在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件
+在不启动系统的情况下 (使用另一个系统), 修改目录名字让其找不到文件 -->
 
-### 脚本
+<!-- ### 脚本
 [蓝奏云](https://wwe.lanzoui.com/iJtQe1c4prqb)
-(关闭 Defender,自动更新,遥测,SysMain,WSearch)
+(关闭 Defender,自动更新,遥测,SysMain,WSearch) -->
