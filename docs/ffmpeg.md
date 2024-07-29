@@ -38,10 +38,12 @@ ffmpeg -i input.mp4 -c copy -ss 00:00:05 -to 00:00:25 out.mp4
 | -c | copy | 复制视频音频 |
 | -c:v | copy | 复制视频 |
 | -c:a | copy | 复制音频 |
-| -c:v | h264<br>hevc<br>av1<br>h264_nvenc<br>hevc_nvenc<br>av1_nvenc<br>... | 设置视频编码器 |
+| -c:v | h264<br>hevc<br>av1<br>h264_nvenc<br>hevc_nvenc<br>av1_nvenc<br>h264_amf<br>hevc_amf<br>av1_amf<br>... | 设置视频编码器 |
 | -c:a | aac<br>flac<br>... | 设置音频编码器 |
-| -b:v | 8000K | 视频码率为: 8000KB/S |
-| -b:a | 320K | 音频码率为: 320KB/S |
+| -b:v | 8000K | 设置视频码率 8000KB/S |
+| -b:a | 320K | 设置音频码率 320KB/S |
+| -vf | scale=1280:720<br>scale=1920:1080<br>scale=2560:1440<br>scale=3840:2160 | 视频分辨率 |
+| -r | 60 | 设置视频帧率 60 |
 
 把 `input.mp4` 的视频流重新编码成 H264 10000KB/S 码率, 使用NVENC显卡加速, 音频流保持不变, 导出为 `out.mp4`
 ``` bash
