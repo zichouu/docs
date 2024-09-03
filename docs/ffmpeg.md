@@ -21,10 +21,10 @@ ffmpeg -i input.mkv -c copy out.mp4
 
 裁剪 `input.mp4` 的第5-25秒的内容, 导出为 `out.mp4`
 ``` bash
-ffmpeg -i input.mp4 -c copy -ss 00:00:05 -t 20 out.mp4
+ffmpeg -ss 00:00:05 -t 20 -i input.mp4 -c copy out.mp4
 ```
 ``` bash
-ffmpeg -i input.mp4 -c copy -ss 00:00:05 -to 00:00:25 out.mp4
+ffmpeg -ss 00:00:05 -to 00:00:25 -i input.mp4 -c copy out.mp4
 ```
 
 ## 音/视频 编码
