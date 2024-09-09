@@ -43,6 +43,14 @@ http {
 }
 ```
 
+## Cache-Control
+```conf{3}
+location / {
+    root 文件根目录;
+    add_header Cache-Control "public, max-age=14400, must-revalidate";
+}
+```
+
 ## Vue Router History
 ```conf{3}
 server {
@@ -90,7 +98,7 @@ http {
 
     #access_log  logs/access.log  main;
 
-    # 隐藏nginx版本号
+    # 显示nginx版本号
     server_tokens off;
 
     sendfile       on;
@@ -143,6 +151,8 @@ http {
        location / {
            root   文件根目录;
            index  index.html index.htm;
+
+           add_header Cache-Control "public, max-age=14400, must-revalidate";
 
            # Vue Router History
            try_files $uri $uri/ $uri.html /index.html;
