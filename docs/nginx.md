@@ -44,19 +44,16 @@ http {
 ```
 
 ## Cache-Control
-```conf{3}
+```conf{2}
 location / {
-    root 文件根目录;
     add_header Cache-Control "public, max-age=14400, must-revalidate";
 }
 ```
 
 ## Vue Router History
-```conf{3}
-server {
-    location / {
-        try_files $uri $uri/ $uri.html /index.html;
-    }
+```conf{2}
+location / {
+    try_files $uri $uri/ $uri.html /index.html;
 }
 ```
 
