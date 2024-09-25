@@ -77,6 +77,12 @@ module.exports = {
                 ],
             },
             {
+                text: 'DNF',
+                items: [
+                    {text: '音乐去除', link: '/seria',},
+                ],
+            },
+            {
                 text: '配置',
                 items: [
                     {text: 'Windows', link: '/windows'},
