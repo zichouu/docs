@@ -13,7 +13,7 @@
 | Twitch | Any | *.twitch.tv; *.twitchcdn.net | Any |
 | Spotify | Any | *.spotify.com | Any |
 | Discord | Any | *.discord.com; *.discordapp.com; *.discord.gg | Any |
-| GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev | Any |
+| GitHub | Any | *.github.com; *.githubusercontent.com; *.github.dev; *.githubassets.com | Any |
 | Reddit | Any | *.reddit.com; *.redditstatic.com; *.redd.it;  *.redditmedia.com | Any |
 | Steam | Any | *.steamcommunity.com; *.steampowered.com | Any |
 | EPIC | Any | *.epicgames.com | Any |
