@@ -30,24 +30,16 @@ module.exports = {
         nav: [
             {text: '首页', link: '/'},
             {text: '开始阅读', link: '/wfqd'},
-            {
-                text: '链接',
-                items: [
-                    {
-                        text: '我的网站',
-                        items: [
+            {text: '链接',items: [
+                    {text: '我的网站',items: [
                             {text: 'zichou.eu.org', link: 'https://zichou.eu.org/wftime'},
                         ]
                     },
-                    {
-                        text: 'Dev',
-                        items: [
+                    {text: 'Dev',items: [
                             {text: 'VitePress', link: 'https://vitepress.dev/zh/reference/site-config'},
                         ],
                     },
-                    {
-                        text: '测试页面',
-                        items: [
+                    {text: '测试页面',items: [
                             {text: 'Test', link: '/test'},
                         ],
                     },
@@ -89,6 +81,7 @@ module.exports = {
                     {text: 'PowerShell', link: '/ps1'},
                     {text: 'NVIDIA', link: '/nvidia'},
                     {text: 'nginx', link: '/nginx'},
+                    {text: 'Rust', link: '/rust'},
                     {text: 'TAURI', link: '/tauri'},
                     {text: 'Proxifier', link: '/proxifier'},
                 ],
