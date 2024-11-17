@@ -13,3 +13,5 @@ ffmpeg -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -t 10 -c:a l
 `music/seria_gate.ogg`
 ### 角色选择阶段
 `music/character_stage.ogg`
+### 工会
+`music/Guild_agit.ogg`
