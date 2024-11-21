@@ -81,6 +81,7 @@ module.exports = {
                     {text: 'PowerShell', link: '/ps1'},
                     {text: 'NVIDIA', link: '/nvidia'},
                     {text: 'nginx', link: '/nginx'},
+                    {text: 'Python', link: '/python'},
                     {text: 'Rust', link: '/rust'},
                     {text: 'TAURI', link: '/tauri'},
                     {text: 'Proxifier', link: '/proxifier'},

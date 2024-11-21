@@ -10,9 +10,7 @@
         "dev": "vitepress dev docs --host",
         "build": "vitepress build docs && npx workbox-cli generateSW",
         "preview": "vitepress preview docs",
-        "deploy": "wrangler pages publish docs/.vitepress/dist",
-        "i": "yarn install",
-        "update": "yarn upgrade"
+        "deploy": "wrangler pages publish docs/.vitepress/dist"
     },
     "dependencies": {
         "workbox-cli": "^7.3.0",
