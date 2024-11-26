@@ -94,6 +94,7 @@ module.exports = {
                     {text: 'Node.js', link: '/nodejs'},
                     {text: 'adb', link: '/adb'},
                     {text: 'Git', link: '/git'},
+                    {text: 'Go', link: '/go'},
                 ],
             },
         ],
