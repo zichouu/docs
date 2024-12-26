@@ -1,7 +1,5 @@
-# TAURI 配置
-[官网](https://tauri.app/zh-cn/)
-
-[Rust](https://www.rust-lang.org/zh-CN/)
+# Rust
+[官网](https://www.rust-lang.org/zh-CN/)
 
 ## Rustup 镜像
 
