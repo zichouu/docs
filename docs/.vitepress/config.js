@@ -16,6 +16,11 @@ module.exports = {
     //         ],
     //     }
     // },
+    vite: {
+        server: {
+            open: './',
+        }
+    },
     themeConfig: {
         logo: '/logo.png',
         outline: 'deep',
@@ -82,13 +87,13 @@ module.exports = {
                     {text: 'PowerShell', link: '/ps1'},
                     {text: 'Git', link: '/git'},
                     {text: 'Node.js', link: '/nodejs'},
+                    {text: 'Go', link: '/go'},
                     {text: 'nginx', link: '/nginx'},
                 ],
             },
             {
                 text: '备忘',
                 items: [
-                    {text: 'Go', link: '/go'},
                     {text: 'Python', link: '/python'},
                     {text: 'Rust', link: '/rust'},
                     {text: 'TAURI', link: '/tauri'},

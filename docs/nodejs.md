@@ -6,6 +6,11 @@
 npm config set registry https://registry.npmmirror.com
 ```
 
+## yarn 淘宝源
+```
+yarn config set registry https://registry.npmmirror.com
+```
+
 ## 全局
 ::: code-group
 ``` [添加]
