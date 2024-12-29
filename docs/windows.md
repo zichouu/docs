@@ -1,5 +1,9 @@
 # Windows 系统设置
 
+`Shift F10` `oobe\bypassnro`
+
+## 链接
+
 ## 0 装前细节
 1. 提前准备好驱动的新版安装包, 特别是显卡和网卡
    - 显卡: 文件体积大
@@ -10,11 +14,35 @@
 
 ## 1 设置
 
-### 关闭鼠标精准
+### 关闭鼠标精准 (Atlas)
 ![](assets/wd/sbjz.png)
 
-### 关闭 UAC 提示
+### 关闭 UAC 提示 (EasyRC)
 ![](assets/wd/uac.png)
+
+### 关闭粘滞快捷键 (Atlas)
+![](assets/wd/s5.png)
+
+### 关闭传递优化 (Atlas)
+![](assets/wd/cdyh.png)
+
+### 关闭鼠标手势 (Atlas)
+:::tip 提示
+新版系统默认关闭, 旧版在组策略关闭
+:::
+![](assets/wd/shake.png)
+
+### 关闭 Store 自动更新 (Atlas)
+:::tip 提示
+LTSC版本添加Store的方法: [Github](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
+:::
+![](assets/wd/store.png)
+
+### 资源管理器 (Atlas)
+- 开启 `文件扩展名` `隐藏的项目`
+![](assets/wd/kz.png)
+- 文件夹选项
+![](assets/wd/wjj.png)
 
 ### 关闭防火墙
 ![](assets/wd/fhq.png)
@@ -22,29 +50,8 @@
 ### 关闭驱动器优化计划
 ![](assets/wd/qdqyh.png)
 
-### 关闭粘滞快捷键
-![](assets/wd/s5.png)
-
-### 关闭传递优化
-![](assets/wd/cdyh.png)
-
-### 关闭窗口最小化鼠标手势
-:::tip 提示
-新版系统默认关闭, 旧版在组策略关闭
-:::
-![](assets/wd/shake.png)
-
-### 关闭 Store 自动更新
-:::tip 提示
-LTSC版本添加Store的方法: [Github](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
-:::
-![](assets/wd/store.png)
-
-### 资源管理器 (Explorer)
-- 开启 `文件扩展名` `隐藏的项目`
-![](assets/wd/kz.png)
-- 文件夹选项
-![](assets/wd/wjj.png)
+### 语言栏
+![](assets/wd/yyl.png)
 
 ### 性能选项
 关闭一些过度动画, 效率至上
